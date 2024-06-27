@@ -8,8 +8,8 @@ import lombok.Setter;
 import java.io.Serializable;
 
 @Embeddable
-@Getter
-@Setter
+//@Getter
+//@Setter
 
 public class ComprasProductoPK implements Serializable {
 
@@ -20,4 +20,19 @@ public class ComprasProductoPK implements Serializable {
     private Integer idProducto;
 
 
+    public Integer getIdCompra() {
+        return idCompra;
+    }
+
+    public void setIdCompra(Integer idCompra) {
+        this.idCompra = idCompra;
+    }
+
+    public Integer getIdProducto() {
+        return idProducto;
+    }
+
+    public void setIdProducto(Integer idProducto) {
+        this.idProducto = idProducto;
+    }
 }
